@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <dimen name="padding">10dp</dimen>
+    <dimen name="textSizeTitle">22sp</dimen>
+    <dimen name="textSizeText">18sp</dimen>
+    <dimen name="paddingMainLayout">10dp</dimen>
+    <dimen name="gridSpacing">10dp</dimen>
+    <dimen name="MovieNameTop">25dp</dimen>
+    <dimen name="paddingMovieTop" tools:ignore="UnusedResources">20dp</dimen>
+
+
+</resources>

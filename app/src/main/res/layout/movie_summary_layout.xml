@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/DetailOriginalTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/darker_gray"
+        android:padding="@dimen/padding"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/MovieNameTop"
+        android:textStyle="bold" />
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/paddingMainLayout"
+        android:paddingRight="@dimen/paddingMainLayout"
+        android:paddingTop="@dimen/padding"
+        tools:context="com.example.sumanthkrishna.popularmovies.DetailMovieActivity">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/DetailImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:contentDescription="@string/contentDescription"
+                android:paddingBottom="@dimen/padding"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/ReleaseDate"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DetailReleaseDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textSizeText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding"
+                    android:text="@string/rating"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/textSizeTitle"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DetailUserRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding"
+                    android:paddingLeft="@dimen/padding"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/textSizeText" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Fav"
+                        android:paddingLeft="@dimen/padding"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/textSizeTitle"
+                        android:textStyle="bold"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/checkbox"
+                        android:onClick="favoriteMovieAddition"/>
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/synopsis"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/textSizeTitle"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/DetailSynopsisTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/textSizeText" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
